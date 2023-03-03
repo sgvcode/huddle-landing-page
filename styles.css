@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --poppins: "Open Sans", sans-serif;
+  --open_sans: "Poppins", sans-serif;
+  --violet: hsl(257, 40%, 49%);
+  --soft_magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--violet);
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  font-family: var(--poppins);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 80px);
+  margin: auto;
+}
+
+.logo {
+  margin: 30px 0 58px;
+  width: 128px;
+  height: auto;
+}
+
+.image {
+  width: 100%;
+}
+
+section.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.details h1 {
+  font-family: var(--open_sans);
+  color: white;
+  width: 300px;
+  text-align: center;
+  margin: 60px 0 16px;
+  font-size: 1.45rem;
+  color: rgba(255, 255, 255, 0.925);
+}
+section.details p {
+  text-align: center;
+  color: white;
+  width: 300px;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.767);
+}
+section.details button {
+  margin: 25px auto;
+  width: 210px;
+  height: 42px;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+  color: var(--violet);
+  font-family: var(--poppins);
+  transition: all 0.5s ease-in-out;
+}
+section.details button:hover {
+  background-color: var(--soft_magenta);
+  color: white;
+}
+section.details .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+  margin: 35px auto;
+}
+section.details .social i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  font-size: 13px;
+  transition: all 0.5s ease;
+}
+section.details .social i:hover {
+  color: var(--soft_magenta);
+  border: 1px solid var(--soft_magenta);
+}
+
+footer {
+  visibility: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 680px) and (max-width: 1439px) {
+  body {
+    background-size: cover;
+  }
+  .desktop {
+    margin: 50px auto;
+  }
+  .logo {
+    display: block;
+    align-items: flex-start;
+    width: 200px;
+  }
+  .image {
+    max-width: 640px;
+  }
+  section.details h1 {
+    width: 490px;
+    margin: 10px 0 10px;
+    font-size: 2.3rem;
+  }
+  section.details p {
+    width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    min-height: 100vh;
+    background-image: url("images/bg-desktop.svg");
+    background-size: contain;
+  }
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+  }
+  .desktop {
+    width: 750px;
+  }
+  .desktop .logo {
+    margin: 58px 0 78px 34px;
+    width: 210px;
+  }
+  .desktop .logo img {
+    width: 200px;
+  }
+  .desktop .image {
+    max-width: 708px;
+    margin-left: 34px;
+  }
+  section.details {
+    display: block;
+    margin: 0 50px;
+  }
+  section.details h1,
+  section.details p {
+    display: block;
+    text-align: left;
+  }
+  section.details h1 {
+    width: 490px;
+    padding: 28px 0 10px;
+    font-size: 2.3rem;
+  }
+  section.details p {
+    width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  section.details button {
+    width: 200px;
+    height: 56px;
+    font-size: 1.15rem;
+    font-family: "Poppind", sans-serif;
+  }
+  section.details .social {
+    position: fixed;
+    right: 75px;
+    bottom: 8px;
+    width: 150px;
+  }
+  section.details .social i {
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1680px) {
+  body {
+    background-size: cover;
+  }
+  .container {
+    height: calc(100vh - 20px);
+    margin: 0 auto;
+  }
+  .container .social {
+    position: relative;
+    right: 150px;
+    bottom: 100px;
+  }
+}/*# sourceMappingURL=styles.css.map */
