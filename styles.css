@@ -132,8 +132,8 @@ footer {
   }
   section.details h1 {
     width: 490px;
-    margin: 10px 0 10px;
-    font-size: 2.3rem;
+    padding: 28px 0 10px;
+    font-size: 2.52rem;
   }
   section.details p {
     width: 500px;
@@ -181,7 +181,7 @@ footer {
   section.details h1 {
     width: 490px;
     padding: 28px 0 10px;
-    font-size: 2.3rem;
+    font-size: 2.52rem;
   }
   section.details p {
     width: 500px;
@@ -189,9 +189,9 @@ footer {
     line-height: 1.6;
   }
   section.details button {
-    width: 200px;
-    height: 56px;
-    font-size: 1.15rem;
+    width: 210px;
+    height: 60px;
+    font-size: 1.2rem;
     font-family: "Poppind", sans-serif;
   }
   section.details .social {
